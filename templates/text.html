@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Interview Simulator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css">
+  <script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+  
+</head>
+<body bg-white>
+
+  <div class="jumbotron jumbotron-fluid text-center">
+    <h1>Interview Simulator</h1>
+    <p>The aim of this project is to provide candidates seeking for a job a platform
+      that analyses their answers to a set of pre-defined questions </p> 
+  </div>
+        <!--
+       Audio image header
+        -->
+        <div class="container bg-white"> 
+           
+          <h2>Text Interview</i></h1>
+
+            {% block body %}
+
+            <!--
+           Interview question
+            -->
+       <div class="row">
+         <div class="col-sm-4">
+           <div class="c-callout c-callout-primary b-t-1 b-r-1 b-b-1">
+             <strong class="h4">Question</strong><br>
+             <p class="lead">Tell us about the last time you showed leadership.</p>
+           </div>
+         
+
+<br>
+
+<br>
+
+ 
+
+  <form action="/text_1" method="post">
+      <textarea cols="70" rows ="20" name="text"></textarea><br><br>
+    <button type="submit" class="btn btn-primary">Start Analysis</button>
+  </form>
+  <br>
+</div>
+
+</div>
+</div>
+
+{% endblock %}
+
+
+ <br>
+    <br>
+    
+  </body>
+</html>

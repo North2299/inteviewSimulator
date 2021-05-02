@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Interview Simulator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css">
+  <script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Interview Simulator</h1>
+  <p>The aim of this project is to provide candidates seeking for a job a platform
+    that analyses their answers to a set of pre-defined questions </p> 
+</div>
+{% block body %} 
+<div class="container">
+  
+  <div class="row">
+    <!--
+    Video Interview presentation
+    -->
+    <div class="col-sm-4">
+      <h3>Video Interview</h3>
+      <p>Use the video interview simulator and get a feedback on how our algorithm interprets your facial emotions compared to other candidates.</p>
+      <br>
+          <p> You will be provided a feedback on your facial emotions such as :</p>
+          <ul>
+            <li>Anger</li>
+            <li>Happiness</li>
+            <li>Fear</li>
+            <li>Sadness</li>
+            <li>Surprise</li>
+            <li>Disgust</li>
+          </ul>
+        <br>
+        <form class="form-inline" action="/video" method="post">
+          <button type="submit" class="btn btn-primary" name="video">Video Interview</button>
+        </form>
+      
+    </div>
+    <!--
+    Audio Interview presentation
+    -->
+    <div class="col-sm-4">
+      <h3>Audio Interview</h3>
+      <p> Use the audio interview simulator and get a feedback on how our algorithm interprets your vocal emotions compared to other candidates.</p>
+          <br>
+          <p> You will be provided a feedback on your vocal emotions such as :</p>
+          <ul>
+            <li>Anger</li>
+            <li>Happiness</li>
+            <li>Fear</li>
+            <li>Sadness</li>
+            <li>Surprise</li>
+            <li>Disgust</li>
+            <li>Calm</li>
+            <li>Neutral</li>
+          </ul>
+        <br>
+        <form class="form-inline" action="/audio_index" method="post">
+          <button type="submit" class="btn btn-primary" name="audio_index" >Audio Interview</button>
+        </form>
+    </div>
+    <!--
+    Text Interview presentation
+    -->
+    <div class="col-sm-4">
+      <h3>Text Interview</h3>
+      <p> Use the text interview simulator and get a feedback on how our algorithm interprets your psychological traits through compared to other candidates.</p>
+           <br>
+           <p> You will be provided a feedback on your Big Five Psychological traits, which include :</p>
+          <ul>
+            <li>Anger</li>
+            <li>Happiness</li>
+            <li>Fear</li>
+            <li>Sadness</li>
+            <li>Surprise</li>
+            <li>Disgust</li>
+          </ul>
+        <br>
+        <form class="form-inline" action="/text" method="post" align="center">
+          <button type="submit" class="btn btn-primary" name="text" >Text Interview</button>
+        </form>
+    </div>
+  </div>
+</div>
+{# Fin du bloc "body" #}
+{% endblock %}
+<br>
+    <br>
+    <a href="/rules">How does it work ?</a>
+    <br>
+    <br>
+</body>
+</html>
